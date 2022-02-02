@@ -1,11 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
+import Footer from "./src/Footer";
+import Header from "./src/Header";
 import Main from "./src/Main";
+import StatusBarBackground from "./src/StatusBar";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      {/* <StatusBarBackground style={{ backgroundColor: "midnightblue" }} /> */}
+      <Header />
       <Main />
-    </View>
+      <Footer />
+    </SafeAreaView>
   );
 }
 
